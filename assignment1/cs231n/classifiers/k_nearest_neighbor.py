@@ -71,7 +71,8 @@ class KNearestNeighbor(object):
         # training point, and store the result in dists[i, j]. You should   #
         # not use a loop over dimension.                                    #
         #####################################################################
-        dists[i, j] = np.sqrt(np.dot(X[i]-self.X_train[j], X[i]-self.X_train[j]))
+        # dists[i, j] = np.sqrt(np.dot(X[i]-self.X_train[j], X[i]-self.X_train[j]))
+        dists[i, j] = np.sqrt(np.sum(np.square(X[i]-self.X_train[j])))
         #####################################################################
         #                       END OF YOUR CODE                            #
         #####################################################################
@@ -93,7 +94,8 @@ class KNearestNeighbor(object):
       # Compute the l2 distance between the ith test point and all training #
       # points, and store the result in dists[i, :].                        #
       #######################################################################
-      pass
+      #dists[i] = np.linalg.norm(X[i]-self.X_train, axis=1)
+      dists[i] = np.sqrt(np.sum(np.square(X[i]-self.X_train), axis=1))
       #######################################################################
       #                         END OF YOUR CODE                            #
       #######################################################################
@@ -121,7 +123,11 @@ class KNearestNeighbor(object):
     # HINT: Try to formulate the l2 distance using matrix multiplication    #
     #       and two broadcast sums.                                         #
     #########################################################################
-    pass
+    test = np.sum(np.square(X), axis=1, keepdims=True)
+    train = np.sum(np.square(self.X_train), axis=1)
+    test_multi_train = np.matmul(X, self.X_train.T)
+    dists = test + train - 2*test_multi_train
+    dists = np.sqrt(dists)
     #########################################################################
     #                         END OF YOUR CODE                              #
     #########################################################################
@@ -140,6 +146,7 @@ class KNearestNeighbor(object):
     - y: A numpy array of shape (num_test,) containing predicted labels for the
       test data, where y[i] is the predicted label for the test point X[i].  
     """
+    # print(dists)
     num_test = dists.shape[0]
     y_pred = np.zeros(num_test)
     for i in range(num_test):
@@ -153,8 +160,11 @@ class KNearestNeighbor(object):
       # neighbors. Store these labels in closest_y.                           #
       # Hint: Look up the function numpy.argsort.                             #
       #########################################################################
-      tmp = np.argsort(dists[i])[:k]
-      closest_y = self.y_train[tmp]
+      tmp = np.argsort(dists[i])
+      # print(tmp)
+      # print(len(self.y_train))
+      closest_y = self.y_train[tmp[:k]]
+      # print(closest_y)
       #########################################################################
       # TODO:                                                                 #
       # Now that you have found the labels of the k nearest neighbors, you    #
@@ -162,19 +172,33 @@ class KNearestNeighbor(object):
       # Store this label in y_pred[i]. Break ties by choosing the smaller     #
       # label.                                                                #
       #########################################################################
-      closest_y = np.argsort(closest_y)
+      closest_tmp = np.argsort(closest_y)
+      closest_yy = closest_y[closest_tmp]
+      closest_y = closest_yy
+      # print(closest_y)
+      # print(closest_y.shape[0])
       count = 0
       count_tmp = 0
       now = -2
       last = -1
-      for j in range(closest_y):
+      for j in range(k):
         if closest_y[j] != last:
           if count_tmp > count:
             count = count_tmp
-            now = closest_y
+            now = last
+          count_tmp=1
+        else:
+          count_tmp+=1
+        last = closest_y[j]
+      # print(count, " ", now)
+      if count_tmp > count:
+   #     count = count_tmp
+        now = closest_y[k-1]
+      y_pred[i] = now
+      # print(now)
       #########################################################################
       #                           END OF YOUR CODE                            # 
       #########################################################################
-
+    # print(y_pred)
     return y_pred
 

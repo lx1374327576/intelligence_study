@@ -2,10 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a31d0455-cc8b-4642-ad6b-75a096a55268" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/intelligence_study.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/intelligence_study.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment1/.ipynb_checkpoints/knn-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/.ipynb_checkpoints/knn-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment1/.ipynb_checkpoints/svm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/.ipynb_checkpoints/svm-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment1/cs231n/classifiers/k_nearest_neighbor.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/cs231n/classifiers/k_nearest_neighbor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment1/knn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/knn.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment1/svm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/svm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,11 +25,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/k_nearest_neighbor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="889">
-              <caret line="173" column="27" selection-start-line="173" selection-start-column="27" selection-end-line="173" selection-end-column="27" />
+            <state relative-caret-position="228">
+              <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_svm.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="480">
+              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -57,10 +70,9 @@
     <packageJsonPaths />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="130" />
     <option name="y" value="23" />
-    <option name="width" value="1036" />
-    <option name="height" value="907" />
+    <option name="width" value="1680" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -154,7 +166,7 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" order="9" type="SLIDING" weight="0.33061224" />
+      <window_info anchor="bottom" id="Terminal" internal_type="SLIDING" order="9" type="SLIDING" weight="0.33061224" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" weight="0.32959184" />
       <window_info anchor="bottom" id="Python Console" order="12" weight="0.32959184" />
@@ -187,8 +199,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/k_nearest_neighbor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="889">
-          <caret line="173" column="27" selection-start-line="173" selection-start-column="27" selection-end-line="173" selection-end-column="27" />
+        <state relative-caret-position="228">
+          <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_svm.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
