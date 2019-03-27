@@ -33,6 +33,8 @@ def svm_loss_naive(W, X, y, reg):
         continue
       margin = scores[j] - correct_class_score + 1 # note delta = 1
       if margin > 0:
+        dW[:, j] += X[i]
+        dW[:, y[i]] += -X[i]
         loss += margin
 
   # Right now the loss is a sum over all training examples, but we want it
@@ -50,7 +52,8 @@ def svm_loss_naive(W, X, y, reg):
   # loss is being computed. As a result you may need to modify some of the    #
   # code above to compute the gradient.                                       #
   #############################################################################
-
+  dW = dW*1.0/num_train
+  dW += 2*reg*W
 
   return loss, dW
 
@@ -69,7 +72,19 @@ def svm_loss_vectorized(W, X, y, reg):
   # Implement a vectorized version of the structured SVM loss, storing the    #
   # result in loss.                                                           #
   #############################################################################
-  pass
+  now = X.dot(W)
+  num_train = X.shape[0]
+  num_classes = W.shape[1]
+  now_tmp = np.zeros(num_train)
+  now_plus = np.zeros((num_train, num_classes))
+  for i in range(num_train):
+    now_tmp[i] += now[i, y[i]]
+    now_plus[i, y[i]] = -1
+  now_plus += (now.T - now_tmp + 1).T
+  now_plus = np.maximum(now_plus, 0)
+  loss += np.sum(now_plus) * 1.0 / num_train
+  loss += reg * np.sum(W * W)
+
   #############################################################################
   #                             END OF YOUR CODE                              #
   #############################################################################
@@ -84,7 +99,13 @@ def svm_loss_vectorized(W, X, y, reg):
   # to reuse some of the intermediate values that you used to compute the     #
   # loss.                                                                     #
   #############################################################################
-  pass
+  now_plus[now_plus > 0] = 1.0
+  sum = np.sum(now_plus, axis=1)
+  now_plus[np.arange(num_train), y] -= sum
+
+  dW += X.T.dot(now_plus)
+  dW = dW*1.0/num_train
+  dW += 2*reg*W
   #############################################################################
   #                             END OF YOUR CODE                              #
   #############################################################################

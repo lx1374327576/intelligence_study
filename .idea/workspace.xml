@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a31d0455-cc8b-4642-ad6b-75a096a55268" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/assignment1/.ipynb_checkpoints/knn-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/.ipynb_checkpoints/knn-checkpoint.ipynb" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/assignment1/cs231n/svm.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment1/.ipynb_checkpoints/svm-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/.ipynb_checkpoints/svm-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment1/cs231n/classifiers/k_nearest_neighbor.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/cs231n/classifiers/k_nearest_neighbor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment1/knn.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/knn.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_classifier.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_classifier.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_svm.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_svm.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment1/softmax.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/softmax.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment1/svm.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment1/svm.ipynb" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,19 +30,42 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/k_nearest_neighbor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
+            <state relative-caret-position="1100">
               <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_svm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+            <state relative-caret-position="1545">
+              <caret line="103" column="37" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/neural_net.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_classifier.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="466">
+              <caret line="85" column="76" lean-forward="true" selection-start-line="85" selection-start-column="76" selection-end-line="85" selection-end-column="76" />
+              <folding>
+                <element signature="e#0#37#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -57,6 +82,8 @@
         <option value="$PROJECT_DIR$/.gitgnore" />
         <option value="$PROJECT_DIR$/assignment1/requirements.txt" />
         <option value="$PROJECT_DIR$/assignment1/cs231n/classifiers/k_nearest_neighbor.py" />
+        <option value="$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_svm.py" />
+        <option value="$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_classifier.py" />
       </list>
     </option>
   </component>
@@ -124,6 +151,11 @@
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/assignment1/cs231n" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -197,19 +229,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/neural_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/k_nearest_neighbor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
+        <state relative-caret-position="1100">
           <caret line="163" column="8" selection-start-line="163" selection-start-column="8" selection-end-line="163" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_svm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" column="16" lean-forward="true" selection-start-line="32" selection-start-column="16" selection-end-line="32" selection-end-column="16" />
+        <state relative-caret-position="1545">
+          <caret line="103" column="37" selection-start-line="103" selection-start-column="37" selection-end-line="103" selection-end-column="37" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/svm.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="466">
+          <caret line="85" column="76" lean-forward="true" selection-start-line="85" selection-start-column="76" selection-end-line="85" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
