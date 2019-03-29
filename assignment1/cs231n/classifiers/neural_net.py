@@ -75,7 +75,9 @@ class TwoLayerNet(object):
     # Store the result in the scores variable, which should be an array of      #
     # shape (N, C).                                                             #
     #############################################################################
-    pass
+    layer1 = X.dot(W1)+b1
+    layer1 = np.maximum(layer1, 0)
+    scores = layer1.dot(W2)+b2
     #############################################################################
     #                              END OF YOUR CODE                             #
     #############################################################################
@@ -92,7 +94,12 @@ class TwoLayerNet(object):
     # in the variable loss, which should be a scalar. Use the Softmax           #
     # classifier loss.                                                          #
     #############################################################################
-    pass
+    scores_exp = np.exp(scores)
+    scores_sum = np.sum(scores_exp, axis=1)
+    arr = np.arange(N)
+    loss = -np.sum(np.log(np.exp(scores[arr, y[arr]]) / scores_sum))
+    loss /= N
+    loss += reg * (np.sum(W1 * W1) + np.sum(W2 * W2))
     #############################################################################
     #                              END OF YOUR CODE                             #
     #############################################################################
@@ -104,7 +111,22 @@ class TwoLayerNet(object):
     # and biases. Store the results in the grads dictionary. For example,       #
     # grads['W1'] should store the gradient on W1, and be a matrix of same size #
     #############################################################################
-    pass
+    dscores = scores_exp / scores_sum.reshape(N, 1)
+    # print(dscores)
+    dscores[arr, y] -= 1
+    dscores /= N
+    dW2 = layer1.T.dot(dscores)
+    db2 = np.sum(dscores, axis=0, keepdims=True)
+    dlayer1 = dscores.dot(W2.T)
+    dlayer1[layer1 <= 0] = 0
+    dW1 = X.T.dot(dlayer1)
+    db1 = np.sum(dlayer1, axis=0, keepdims=True)
+    dW1 += 2 * reg * W1
+    dW2 += 2 * reg * W2
+    grads['W1'] = dW1
+    grads['W2'] = dW2
+    grads['b1'] = db1
+    grads['b2'] = db2
     #############################################################################
     #                              END OF YOUR CODE                             #
     #############################################################################
@@ -141,14 +163,14 @@ class TwoLayerNet(object):
     val_acc_history = []
 
     for it in range(num_iters):
-      X_batch = None
-      y_batch = None
 
       #########################################################################
       # TODO: Create a random minibatch of training data and labels, storing  #
       # them in X_batch and y_batch respectively.                             #
       #########################################################################
-      pass
+      arr = np.random.choice(num_train, batch_size)
+      X_batch = X[arr]
+      y_batch = y[arr]
       #########################################################################
       #                             END OF YOUR CODE                          #
       #########################################################################
@@ -163,7 +185,10 @@ class TwoLayerNet(object):
       # using stochastic gradient descent. You'll need to use the gradients   #
       # stored in the grads dictionary defined above.                         #
       #########################################################################
-      pass
+      self.params['W1'] -= learning_rate * grads['W1']
+      self.params['W2'] -= learning_rate * grads['W2']
+      self.params['b1'] -= learning_rate * grads['b1'][0]
+      self.params['b2'] -= learning_rate * grads['b2'][0]
       #########################################################################
       #                             END OF YOUR CODE                          #
       #########################################################################
@@ -174,8 +199,8 @@ class TwoLayerNet(object):
       # Every epoch, check train and val accuracy and decay learning rate.
       if it % iterations_per_epoch == 0:
         # Check accuracy
-        train_acc = (self.predict(X_batch) == y_batch).mean()
-        val_acc = (self.predict(X_val) == y_val).mean()
+        train_acc = np.mean((self.predict(X_batch) == y_batch))
+        val_acc = np.mean((self.predict(X_val) == y_val))
         train_acc_history.append(train_acc)
         val_acc_history.append(val_acc)
 
@@ -208,7 +233,12 @@ class TwoLayerNet(object):
     ###########################################################################
     # TODO: Implement this function; it should be VERY simple!                #
     ###########################################################################
-    pass
+    W1, b1 = self.params['W1'], self.params['b1']
+    W2, b2 = self.params['W2'], self.params['b2']
+    layer1 = X.dot(W1) + b1
+    layer1 = np.maximum(layer1, 0)
+    scores = layer1.dot(W2) + b2
+    y_pred = np.argmax(scores, axis=1)
     ###########################################################################
     #                              END OF YOUR CODE                           #
     ###########################################################################
