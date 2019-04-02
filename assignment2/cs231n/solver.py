@@ -180,12 +180,21 @@ class Solver(object):
 
         # Compute loss and gradient
         loss, grads = self.model.loss(X_batch, y_batch)
+        if self.lx == 0:
+            print(y_batch)
+            # print(self.model.params['W2'])
+            # print(self.model.params['W2']+y_batch)
+        # print(y_batch.shape)
         self.loss_history.append(loss)
 
         # Perform a parameter update
         for p, w in self.model.params.items():
+            if self.lx == 0:
+                print(p, w.shape, grads[p].shape)
             dw = grads[p]
             config = self.optim_configs[p]
+            if self.lx == 0:
+                print(config)
             next_w, next_config = self.update_rule(w, dw, config)
             self.model.params[p] = next_w
             self.optim_configs[p] = next_config
@@ -262,9 +271,11 @@ class Solver(object):
         iterations_per_epoch = max(num_train // self.batch_size, 1)
         num_iterations = self.num_epochs * iterations_per_epoch
 
+        self.lx = 1
+
         for t in range(num_iterations):
             self._step()
-
+            self.lx = 1
             # Maybe print training loss
             if self.verbose and t % self.print_every == 0:
                 print('(Iteration %d / %d) loss: %f' % (
@@ -283,6 +294,7 @@ class Solver(object):
             first_it = (t == 0)
             last_it = (t == num_iterations - 1)
             if first_it or last_it or epoch_end:
+                self.lx = 1
                 train_acc = self.check_accuracy(self.X_train, self.y_train,
                     num_samples=self.num_train_samples)
                 val_acc = self.check_accuracy(self.X_val, self.y_val,
