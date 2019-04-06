@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a31d0455-cc8b-4642-ad6b-75a096a55268" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/.ipynb_checkpoints/BatchNormalization-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/.ipynb_checkpoints/BatchNormalization-checkpoint.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/BatchNormalization.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/BatchNormalization.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/Dropout.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/Dropout.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/cs231n/classifiers/fc_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/cs231n/classifiers/fc_net.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/cs231n/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/cs231n/layers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +15,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment2/cs231n/layers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="801">
+            <state relative-caret-position="572">
               <caret line="453" column="24" selection-start-line="453" selection-start-column="24" selection-end-line="453" selection-end-column="24" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -41,8 +36,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment2/cs231n/classifiers/fc_net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="685">
-              <caret line="271" column="102" selection-start-line="271" selection-start-column="102" selection-end-line="271" selection-end-column="102" />
+            <state relative-caret-position="462">
+              <caret line="300" column="18" selection-start-line="300" selection-start-column="18" selection-end-line="300" selection-end-column="18" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -417,7 +412,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/cs231n/layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="801">
+        <state relative-caret-position="572">
           <caret line="453" column="24" selection-start-line="453" selection-start-column="24" selection-end-line="453" selection-end-column="24" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -427,8 +422,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/cs231n/classifiers/fc_net.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="685">
-          <caret line="271" column="102" selection-start-line="271" selection-start-column="102" selection-end-line="271" selection-end-column="102" />
+        <state relative-caret-position="462">
+          <caret line="300" column="18" selection-start-line="300" selection-start-column="18" selection-end-line="300" selection-end-column="18" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

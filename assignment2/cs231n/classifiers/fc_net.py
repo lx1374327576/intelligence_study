@@ -301,14 +301,20 @@ class FullyConnectedNet(object):
             if i == self.num_layers:
                 dlayers[i - 1], grads['W' + str(i)], grads['b' + str(i)] = affine_backward(dlayers[i], cache)
             elif self.normalization == 'batchnorm':
+                if self.use_dropout:
+                    dlayers[i] = dropout_backward(dlayers[i], caches5[i])
                 dbn[i] = relu_backward(dlayers[i], caches3[i])
                 dh[i], grads['gamma' + str(i)], grads['beta' + str(i)] = batchnorm_backward(dbn[i], caches2[i])
                 dlayers[i - 1], grads['W' + str(i)], grads['b' + str(i)] = affine_backward(dh[i], caches1[i])
             elif self.normalization == 'layernorm':
+                if self.use_dropout:
+                    dlayers[i] = dropout_backward(dlayers[i], caches5[i])
                 dbn[i] = relu_backward(dlayers[i], caches3[i])
                 dh[i], grads['gamma' + str(i)], grads['beta' + str(i)] = layernorm_backward(dbn[i], caches2[i])
                 dlayers[i - 1], grads['W' + str(i)], grads['b' + str(i)] = affine_backward(dh[i], caches1[i])
             else:
+                if self.use_dropout:
+                    dlayers[i] = dropout_backward(dlayers[i], caches5[i])
                 dlayers[i - 1], grads['W' + str(i)], grads['b' + str(i)] = affine_relu_backward(dlayers[i], caches4[i])
             loss += 0.5 * self.reg * np.sum(self.params['W' + str(i)] ** 2)
             grads['W' + str(i)] += self.reg * self.params['W' + str(i)]
