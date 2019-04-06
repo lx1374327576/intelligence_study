@@ -3,12 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a31d0455-cc8b-4642-ad6b-75a096a55268" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/.ipynb_checkpoints/FullyConnectedNets-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/.ipynb_checkpoints/FullyConnectedNets-checkpoint.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/.ipynb_checkpoints/BatchNormalization-checkpoint.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/.ipynb_checkpoints/BatchNormalization-checkpoint.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/BatchNormalization.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/BatchNormalization.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/FullyConnectedNets.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/FullyConnectedNets.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment2/Dropout.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/Dropout.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/cs231n/classifiers/fc_net.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/cs231n/classifiers/fc_net.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment2/cs231n/layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/cs231n/layers.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment2/cs231n/optim.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment2/cs231n/optim.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,11 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment2/cs231n/layers.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="757">
-              <caret line="282" column="69" selection-start-line="282" selection-start-column="69" selection-end-line="282" selection-end-column="69" />
+            <state relative-caret-position="801">
+              <caret line="453" column="24" selection-start-line="453" selection-start-column="24" selection-end-line="453" selection-end-column="24" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -33,17 +32,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment2/cs231n/optim.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-22">
+            <state relative-caret-position="1560">
               <caret line="104" column="63" selection-start-line="104" selection-start-column="63" selection-end-line="104" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assignment2/cs231n/classifiers/fc_net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="179" column="72" selection-start-line="179" selection-start-column="72" selection-end-line="179" selection-end-column="72" />
+            <state relative-caret-position="685">
+              <caret line="271" column="102" selection-start-line="271" selection-start-column="102" selection-end-line="271" selection-end-column="102" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -59,7 +58,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_svm.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1590">
+            <state relative-caret-position="1605">
               <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="9" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -71,7 +70,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/neural_net.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3555">
+            <state relative-caret-position="3600">
               <caret line="240" column="37" selection-start-line="240" selection-start-column="37" selection-end-line="240" selection-end-column="37" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -83,7 +82,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/softmax.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
+            <state relative-caret-position="1245">
               <caret line="83" column="51" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="51" />
               <folding>
                 <element signature="e#0#18#0" expanded="true" />
@@ -95,7 +94,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_classifier.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1215">
+            <state relative-caret-position="1275">
               <caret line="85" column="76" selection-start-line="85" selection-start-column="76" selection-end-line="85" selection-end-column="76" />
               <folding>
                 <element signature="e#0#37#0" expanded="true" />
@@ -107,7 +106,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment2/cs231n/solver.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="523">
+            <state relative-caret-position="4575">
               <caret line="305" column="31" selection-start-line="305" selection-start-column="31" selection-end-line="305" selection-end-column="31" />
               <folding>
                 <element signature="e#0#47#0" expanded="true" />
@@ -135,9 +134,9 @@
         <option value="$PROJECT_DIR$/assignment2/TensorFlow.ipynb" />
         <option value="$PROJECT_DIR$/assignment2/cs231n/layer_utils.py" />
         <option value="$PROJECT_DIR$/assignment2/cs231n/solver.py" />
-        <option value="$PROJECT_DIR$/assignment2/cs231n/classifiers/fc_net.py" />
         <option value="$PROJECT_DIR$/assignment2/cs231n/optim.py" />
         <option value="$PROJECT_DIR$/assignment2/cs231n/layers.py" />
+        <option value="$PROJECT_DIR$/assignment2/cs231n/classifiers/fc_net.py" />
       </list>
     </option>
   </component>
@@ -150,9 +149,11 @@
   <component name="NodePackageJsonFileManager">
     <packageJsonPaths />
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="484" />
+    <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="947" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
@@ -273,10 +274,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="484" y="23" width="1680" height="947" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15995117" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15973479" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -347,49 +348,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_svm.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
-          <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="9" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/neural_net.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3555">
-          <caret line="240" column="37" selection-start-line="240" selection-start-column="37" selection-end-line="240" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/softmax.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="83" column="51" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_classifier.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1215">
-          <caret line="85" column="76" selection-start-line="85" selection-start-column="76" selection-end-line="85" selection-end-column="76" />
-          <folding>
-            <element signature="e#0#37#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/assignment2/cs231n/layer_utils.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/spring1718_assignment2_v2/FullyConnectedNets.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -399,24 +357,57 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/cs231n/optim.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-22">
+        <state relative-caret-position="1560">
           <caret line="104" column="63" selection-start-line="104" selection-start-column="63" selection-end-line="104" selection-end-column="63" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/assignment2/cs231n/classifiers/fc_net.py">
+    <entry file="file://$PROJECT_DIR$/assignment2/cs231n/layer_utils.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_svm.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="179" column="72" selection-start-line="179" selection-start-column="72" selection-end-line="179" selection-end-column="72" />
+        <state relative-caret-position="1605">
+          <caret line="107" column="8" selection-start-line="107" selection-start-column="8" selection-end-line="107" selection-end-column="9" />
           <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/neural_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3600">
+          <caret line="240" column="37" selection-start-line="240" selection-start-column="37" selection-end-line="240" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/softmax.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1245">
+          <caret line="83" column="51" selection-start-line="83" selection-start-column="28" selection-end-line="83" selection-end-column="51" />
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment1/cs231n/classifiers/linear_classifier.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="85" column="76" selection-start-line="85" selection-start-column="76" selection-end-line="85" selection-end-column="76" />
+          <folding>
+            <element signature="e#0#37#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/cs231n/solver.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="523">
+        <state relative-caret-position="4575">
           <caret line="305" column="31" selection-start-line="305" selection-start-column="31" selection-end-line="305" selection-end-column="31" />
           <folding>
             <element signature="e#0#47#0" expanded="true" />
@@ -426,8 +417,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assignment2/cs231n/layers.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="757">
-          <caret line="282" column="69" selection-start-line="282" selection-start-column="69" selection-end-line="282" selection-end-column="69" />
+        <state relative-caret-position="801">
+          <caret line="453" column="24" selection-start-line="453" selection-start-column="24" selection-end-line="453" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment2/cs231n/classifiers/fc_net.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="685">
+          <caret line="271" column="102" selection-start-line="271" selection-start-column="102" selection-end-line="271" selection-end-column="102" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

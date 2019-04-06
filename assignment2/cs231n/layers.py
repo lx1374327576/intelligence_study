@@ -324,7 +324,12 @@ def layernorm_forward(x, gamma, beta, ln_param):
     # transformations you could perform, that would enable you to copy over   #
     # the batch norm code and leave it almost unchanged?                      #
     ###########################################################################
-    pass
+    x_mean = np.mean(x, axis=1)
+    x_var = np.var(x, axis=1)
+    x_norm = (x.T - x_mean) / (np.sqrt(x_var + eps))
+    x_norm = x_norm.T
+    out = gamma * x_norm + beta
+    cache = (x, x_mean, x_var, x_norm, gamma, beta, eps)
     ###########################################################################
     #                             END OF YOUR CODE                            #
     ###########################################################################
@@ -355,7 +360,16 @@ def layernorm_backward(dout, cache):
     # implementation of batch normalization. The hints to the forward pass    #
     # still apply!                                                            #
     ###########################################################################
-    pass
+    x, x_mean, x_var, x_norm, gamma, beta, eps = cache
+    N = x.shape[1]
+    dbeta = np.sum(dout, axis=0)
+    dgamma = np.sum(dout * x_norm, axis=0)
+    dx_norm = dout * gamma
+    dx_norm = dx_norm.T
+    dx_var = np.sum(dx_norm * (-1 / 2) / ((x_var + eps) ** 1.5) * (x.T - x_mean), axis=0)
+    dx_mean = np.sum(dx_norm * (-1) / np.sqrt(x_var + eps), axis=0) + np.sum(dx_var * (-2) / N * (x_mean - x.T), axis=0)
+    dx = dx_norm / (np.sqrt(x_var + eps)) + dx_var / N * 2 * (x.T - x_mean) + dx_mean * (1.0 / N)
+    dx = dx.T
     ###########################################################################
     #                             END OF YOUR CODE                            #
     ###########################################################################
@@ -400,6 +414,8 @@ def dropout_forward(x, dropout_param):
         # TODO: Implement training phase forward pass for inverted dropout.   #
         # Store the dropout mask in the mask variable.                        #
         #######################################################################
+        mask = np.random.rand(*x.shape) < p
+        out = mask * x
         pass
         #######################################################################
         #                           END OF YOUR CODE                          #
@@ -408,7 +424,7 @@ def dropout_forward(x, dropout_param):
         #######################################################################
         # TODO: Implement the test phase forward pass for inverted dropout.   #
         #######################################################################
-        pass
+        out = x
         #######################################################################
         #                            END OF YOUR CODE                         #
         #######################################################################
@@ -435,7 +451,7 @@ def dropout_backward(dout, cache):
         #######################################################################
         # TODO: Implement training phase backward pass for inverted dropout   #
         #######################################################################
-        pass
+        dx = dout * mask
         #######################################################################
         #                          END OF YOUR CODE                           #
         #######################################################################
