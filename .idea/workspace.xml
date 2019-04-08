@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a31d0455-cc8b-4642-ad6b-75a096a55268" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/LSTM_Captioning.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment3/LSTM_Captioning.ipynb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assignment3/NetworkVisualization-PyTorch.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment3/NetworkVisualization-PyTorch.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assignment3/NetworkVisualization-TensorFlow.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/assignment3/NetworkVisualization-TensorFlow.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/cs231n/classifiers/rnn.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment3/cs231n/classifiers/rnn.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assignment3/cs231n/rnn_layers.py" beforeDir="false" afterPath="$PROJECT_DIR$/assignment3/cs231n/rnn_layers.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,7 +38,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assignment3/cs231n/classifiers/rnn.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="254">
@@ -50,6 +47,13 @@
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
             </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/assignment3/cs231n/classifiers/squeezenet.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-754" />
           </provider>
         </entry>
       </file>
@@ -486,6 +490,11 @@
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/assignment3/cs231n/classifiers/squeezenet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-754" />
       </provider>
     </entry>
   </component>
